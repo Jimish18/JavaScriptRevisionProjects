@@ -1,0 +1,145 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#title
+{
+
+}
+
+.underline
+{
+    width: 120px;
+    /* height: 1px; */
+    margin: 10px auto;
+    border: 2px solid #398282;
+    border-radius: 5px;
+}
+
+#review-container
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#review-box
+{
+    display: grid;
+    grid-auto-rows: 0.2fr 1fr;
+    row-gap: 20px;
+    align-content: center;
+}
+
+#review-content
+{
+    /* height: 55vh; */
+    width: 60vw;
+    border: 2px solid #398282;
+    border-radius: 40px;
+    box-shadow: #9f9f9f 6px 4px 8px 0px;
+    position: relative;
+}
+
+#image-section img
+{
+    border-radius: 100%;
+    margin-top: 20px;
+    position: absolute;
+    margin: auto;
+    top: 15px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#image-bg
+{
+    height: 130px;
+    width: 130px;
+    border-radius: 100%;
+    position: relative;
+    top: 12px;
+    z-index: 0;
+    left: 10px;
+    right: 0;
+    margin: auto;
+    background-color: #398282;
+}
+
+#comma-bg
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    left: -100px;
+    top: 20px;
+    right: 0;
+    background-color: #398282;
+    margin: auto;
+    z-index: 2;
+    color: white;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nameAndDesignation
+{
+    margin-top: 50px;
+}
+
+#designation
+{
+    color: #398282;
+}
+
+#review
+{
+    margin: 18px 35px;
+    text-align:center;
+    font-size: 20px;
+}
+
+#next-previous-button i
+{
+    padding: 5px 12px;
+    margin: 0px 8px;
+    font-size: 30px;
+    color: #398282;
+}
+
+#next-previous-button i:hover
+{
+    cursor: pointer;
+}
+
+#random
+{
+    margin: 15px auto;
+}
+
+#random-button
+{
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 2px solid #398282;
+    background: transparent;
+    letter-spacing: 1px;
+    transition: 500ms;
+}
+
+#random-button:hover
+{
+    border: 2px solid #398282;
+    background: #398282;
+    color: white;
+}
