@@ -1,0 +1,161 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: #B3C2F2;
+}
+
+nav
+{
+    width: 100vw;
+    /* height: 70px; */
+    background: #D9FFF8;
+    box-shadow: #787878 0px 2px 16px;
+}
+
+#header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 18px 20px 0px 20px; */
+    padding: 15px;
+}
+
+#toggle-btn
+{
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    transition: 500ms;
+}
+
+#toggle-btn:hover
+{
+    cursor: pointer;
+    transform: rotateZ(90deg);
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+#links ul li
+{
+    padding: 10px 0px 10px 20px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    transition: 500ms;
+}
+
+#links ul li a
+{
+    transition: 500ms;
+}
+
+#links ul li:hover a
+{
+    font-size: 22px;
+    padding-left: 20px;
+    color: #ffffff;
+}
+
+#links ul li:hover
+{
+    background: #2a6f74;
+}
+
+#links
+{
+    /* height: 188px; */    
+    background: #D9FFF8;
+    box-shadow: #9d9d9d 0px 6px 7px;
+}
+
+.hide-links
+{
+    height: 0;
+    overflow: hidden;
+}
+
+#socialmedia
+{
+    display: none;
+}
+
+
+
+@media screen and (min-width: 950px)
+{
+    nav 
+    {
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+    }
+
+    #toggle-btn
+    {
+        display: none;
+    }
+
+    #links
+    {
+        display: inline-block;
+        height: auto;
+        box-shadow: none;
+        /* flex-direction: row; */
+    }
+
+    #links ul
+    {
+        display: flex;
+    }
+
+    #header
+    {
+        display: inline-block;
+    }
+
+    #socialmedia
+    {
+        display: block;
+    }
+
+    #socialmedia ul
+    {
+        display: flex;
+        font-size: 25px;
+    }
+
+    #socialmedia ul li
+    {
+        margin: 0px 10px;
+    }
+
+    #links ul li:hover a
+    {
+        font-size: 25px;
+        padding-left: 0px;
+        letter-spacing: 5px;
+        color: #000000;
+    }
+
+    #links ul li:hover
+    {
+        background: #D9FFF8;
+    }
+}   
+
