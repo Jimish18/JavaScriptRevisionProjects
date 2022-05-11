@@ -6,11 +6,6 @@
     text-align: center;
 }
 
-#title
-{
-
-}
-
 .underline
 {
     width: 120px;
@@ -27,6 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #c0c8d7;
 }
 
 #review-box
@@ -43,7 +39,8 @@
     width: 60vw;
     border: 2px solid #398282;
     border-radius: 40px;
-    box-shadow: #9f9f9f 6px 4px 8px 0px;
+    box-shadow: rgb(150 150 150) 12px 10px 11px 0px;
+    background: white;
     position: relative;
 }
 
@@ -107,6 +104,7 @@
     margin: 18px 35px;
     text-align:center;
     font-size: 20px;
+    height: 100px;
 }
 
 #next-previous-button i
