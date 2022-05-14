@@ -31,3 +31,36 @@ let paragraphs =
     ,
     `Bryan had made peace with himself and felt comfortable with the choices he made. This had made all the difference in the world. Being alone no longer bothered him and this was essential since there was a good chance he might spend the rest of his life alone in a cell.`
 ];
+
+let form = document.getElementById("form");
+let number = document.getElementById("amount");
+let paragraphContainer = document.getElementById("paragraph-container");
+
+form.addEventListener("submit",function(e)
+{
+    let value = parseInt(number.value);
+    let innerArea = ``;
+
+    if(value < 0 || value > 15)
+    {
+        window.alert("Number b/w 0-15 are only allowed");
+    }
+    else
+    {
+        
+
+        let paras = paragraphs.slice(0,value);
+
+        console.log(paras);
+
+        paras.forEach(function(index)
+        {
+            innerArea += `<p>${index}</p>`;
+        });
+
+        paragraphContainer.innerHTML = innerArea;
+    }
+
+    
+    e.preventDefault();
+})

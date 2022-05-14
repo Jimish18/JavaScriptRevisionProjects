@@ -55,7 +55,7 @@ label
 
 #amount
 {
-    width: 50px;
+    width: 60px;
     height: 35px;
     border: none;
     border-radius: 10px;
@@ -73,6 +73,7 @@ label
     color: #2f2f2f;
     transition: 500ms;
     letter-spacing: 1.5px;
+    box-shadow: #b0b0b0 6px 4px 7px;
 }
 
 #submit-btn:hover
@@ -91,5 +92,5 @@ label
     width: 50%;
     margin: 60px auto;
     text-align: center;
-    
+    color: #617D98;
 }
