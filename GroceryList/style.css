@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400&display=swap');
 
@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: 400ms;
 }
 
 #container {
@@ -17,12 +18,11 @@
 {
     width: 50%;
     margin: auto;
-    padding: 10px 35px 100px 35px;
+    padding: 10px 35px 25px 35px;
     text-align: center;
     margin-top: 125px;
     box-shadow: #474747 2px 2px 9px;
     border-radius: 15px;
-    transition: 400ms;
 }
 
 #bucket-container:hover
@@ -44,7 +44,7 @@
 #input-container h1 {
     letter-spacing: 5px;
     font-family: 'Libre Franklin', sans-serif;
-    color: #204255;
+    color: #1d5d82;
 }
 
 #grocery-form 
@@ -74,7 +74,72 @@
     border: none;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    font-size: 22px;
+    font-size: 18px;
     background: #4bbaf7;
     font-family: 'Noto Sans', sans-serif;
+}
+
+#grocery-form button:hover
+{
+    background: #0079bb;
+    color: white;
+}
+
+#list-container
+{
+    margin-top: 60px;
+}
+
+.item
+{
+    margin: 15px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background: #e4f3fb;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.item:hover
+{    
+    background: #b0dffb;
+}
+
+.button-section
+{
+    display: flex;
+    justify-content: space-between;
+    width: 45px;
+    font-size: 18px;
+    align-items: center;
+}
+
+.edit
+{
+    color: #06dd5c;
+}
+
+.delete
+{
+    color: rgb(249, 72, 72);
+}
+
+#clearAll
+{
+    border: none;
+    background: transparent;
+    letter-spacing: 3px;
+    font-size: 20px;
+    margin-top: 40px;
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(107, 21, 21);
+    height: 35px;
+    width: 150px;
+    /* visibility: hidden; */
+}
+
+#clearAll:hover
+{
+    color: rgb(223, 84, 84);
 }

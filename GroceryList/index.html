@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery List</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c2e297d169.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -20,8 +21,15 @@
                 </form>
             </div>
             <div id="list-container">
-                
+                <div class="item">
+                    <p id="itemName">egggs</p>
+                    <div class="button-section">
+                        <i class="fa-solid fa-pen-to-square edit"></i>
+                        <i class="fa-solid fa-trash delete"></i>
+                    </div>
+                </div>
             </div>
+            <button id="clearAll">Clear Items</button>
         </div>
     </div>
 
