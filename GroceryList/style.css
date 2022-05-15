@@ -1,6 +1,80 @@
-*
-{
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+#container {
+    width: 100vw;
+    /* height: 100vh; */
+}
+
+#bucket-container 
+{
+    width: 50%;
+    margin: auto;
+    padding: 10px 35px 100px 35px;
+    text-align: center;
+    margin-top: 125px;
+    box-shadow: #474747 2px 2px 9px;
+    border-radius: 15px;
+    transition: 400ms;
+}
+
+#bucket-container:hover
+{
+    box-shadow: #474747 1px 3px 18px;
+}
+
+#alert
+{
+    margin: 15px auto;
+    width: 80%;
+    letter-spacing: 2px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#input-container h1 {
+    letter-spacing: 5px;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #204255;
+}
+
+#grocery-form 
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0px 193px;
+    height: 40px;
+    margin-top: 40px;
+}
+
+#grocery-form input 
+{
+    border: none;
+    background: #e4f3fb;
+    height: 40px;
+    width: 385px;
+    padding: 5px 20px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 22px;
+}
+
+#grocery-form button 
+{
+    width: 130px;
+    border: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 22px;
+    background: #4bbaf7;
+    font-family: 'Noto Sans', sans-serif;
 }
