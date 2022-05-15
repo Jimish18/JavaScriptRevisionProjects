@@ -136,7 +136,7 @@
     color: rgb(107, 21, 21);
     height: 35px;
     width: 150px;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 #clearAll:hover
