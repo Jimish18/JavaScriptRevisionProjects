@@ -2,32 +2,38 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400&display=swap');
 
-* {
+* 
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     transition: 400ms;
 }
 
-#container {
-    width: 100vw;
-    /* height: 100vh; */
+body
+{
+    background: url(images/bg3.jpg);
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #bucket-container 
 {
     width: 50%;
     margin: auto;
-    padding: 10px 35px 25px 35px;
+    padding: 10px 35px 20px 35px;
     text-align: center;
     margin-top: 125px;
-    box-shadow: #474747 2px 2px 9px;
+    /* box-shadow: #474747 2px 2px 9px; */
+    box-shadow: #000000 4px 7px 15px;
     border-radius: 15px;
+    background: rgb(255, 255, 255,0.9);
 }
 
 #bucket-container:hover
 {
-    box-shadow: #474747 1px 3px 18px;
+    box-shadow: #000000 10px 10px 30px;
 }
 
 #alert
@@ -41,6 +47,18 @@
     font-family: 'Noto Sans', sans-serif;
 }
 
+.alert-danger
+{
+    background: #ffc0c0;
+    color: rgb(137, 5, 5);
+}
+
+.alert-success
+{
+    background: #a5ffa0;
+    color: rgb(0, 84, 0);
+}
+
 #input-container h1 {
     letter-spacing: 5px;
     font-family: 'Libre Franklin', sans-serif;
@@ -51,7 +69,7 @@
 {
     display: grid;
     grid-template-columns: auto auto;
-    padding: 0px 193px;
+    padding: 0px 156px;
     height: 40px;
     margin-top: 40px;
 }
@@ -59,9 +77,9 @@
 #grocery-form input 
 {
     border: none;
-    background: #e4f3fb;
+    background: #ffffff;
     height: 40px;
-    width: 385px;
+    width: 450px;
     padding: 5px 20px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
@@ -87,7 +105,7 @@
 
 #list-container
 {
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .item
@@ -96,14 +114,16 @@
     width: 80%;
     display: flex;
     justify-content: space-between;
-    background: #e4f3fb;
+    /* background: #e4f3fb; */
+    background: #4a4853;
+    color: white;
     padding: 10px 15px;
     border-radius: 10px;
 }
 
 .item:hover
 {    
-    background: #b0dffb;
+    background: #242327;
 }
 
 .button-section
@@ -131,7 +151,7 @@
     background: transparent;
     letter-spacing: 3px;
     font-size: 20px;
-    margin-top: 40px;
+    margin-top: 20px;
     font-family: 'Noto Sans', sans-serif;
     color: rgb(107, 21, 21);
     height: 35px;
