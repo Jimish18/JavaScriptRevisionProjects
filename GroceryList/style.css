@@ -36,6 +36,8 @@ body
     box-shadow: #000000 10px 10px 30px;
 }
 
+/*---------------------- Alert messege ----------------- */
+
 #alert
 {
     margin: 15px auto;
@@ -64,6 +66,8 @@ body
     font-family: 'Libre Franklin', sans-serif;
     color: #1d5d82;
 }
+
+/*---------------------- Form Css ----------------------- */
 
 #grocery-form 
 {
@@ -102,6 +106,8 @@ body
     background: #0079bb;
     color: white;
 }
+
+/*------------------------ Item List Css ------------------------ */
 
 #list-container
 {
@@ -145,6 +151,7 @@ body
     color: rgb(249, 72, 72);
 }
 
+/*------------------------ Clear All Button Css ---------------- */
 #clearAll
 {
     border: none;

@@ -104,6 +104,7 @@ function fetchItemList()
     }
 }
 
+//--------------------- FUNCTION TO SHOW ALERT MESSEGE -------------------//
 function alertMessege(messege,type)
 {    
     alert.innerHTML = messege;
