@@ -1,8 +1,11 @@
-console.log("Jay Shree Ram");
+// console.log("Jay Shree Ram");
+
+let editIndexNumber;
 
 let form = document.getElementById("grocery-form");
 let clearAllBtn = document.getElementById("clearAll");
 let alert = document.getElementById("alert");
+let addBtn = document.getElementById("addBtn");
 
 
 clearAllBtn.addEventListener("click",function()
@@ -24,7 +27,21 @@ function addItemToList(e)
 
     fetchItemList();
 
-    itemListObj.push(capitalizeFirstLetter(itemName.value));
+    if(addBtn.innerText === `Edit`)
+    {
+        // For edit item and update in list
+        itemListObj[editIndexNumber] = capitalizeFirstLetter(itemName.value);
+        addBtn.innerText = `Add Item`;
+        alertMessege(`Item edited successfully`,`success`);
+
+    }
+    else
+    {
+        // For simply add item
+        itemListObj.push(capitalizeFirstLetter(itemName.value));
+    }
+
+
 
     localStorage.setItem("itemList",JSON.stringify(itemListObj));
     itemName.value = "";
@@ -46,7 +63,7 @@ function showItems()
         innerHtml += `<div class="item">
                         <p id="itemName">${element}</p>
                         <div class="button-section">
-                            <i class="fa-solid fa-pen-to-square edit"></i>
+                            <i class="fa-solid fa-pen-to-square edit" id = "${index+1}" onclick = "editItem(this.id)"></i>
                             <i class="fa-solid fa-trash delete" id = "${index}" onclick = "deleteItem(this.id)"></i>
                         </div>
                       </div>
@@ -116,4 +133,20 @@ function alertMessege(messege,type)
         alert.innerHTML = ``;
         alert.classList.remove(`alert-${type}`);
     },1000);
+}
+
+// --------------------FUNCTION TO EDIT EXISTING ITEM IN THE LIST ------------//
+function editItem(indexNumber)
+{
+    // editFlag = true;
+
+    let itemName = document.getElementById("itemInput");
+
+    fetchItemList();
+
+    itemName.value = itemListObj[indexNumber-1];   
+
+    addBtn.innerText = `Edit`;
+
+    editIndexNumber = indexNumber-1;
 }
