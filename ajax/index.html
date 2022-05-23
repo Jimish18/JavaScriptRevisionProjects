@@ -23,7 +23,9 @@
 
     <div id="buttonSection">
         <button id="fetchData">Fetch Data</button>
-        <button id="popData">Populate Data</button>
+        <!-- <button id="popData">Populate Data</button> -->
+        <button id="titleData">Fetch Titles</button>
+        <button id="contentData" onclick=loadData("https://jsonplaceholder.typicode.com/posts",fetchTitleFunction)>Fetch Content</button>
     </div>
 
     <div id="container">
