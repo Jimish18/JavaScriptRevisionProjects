@@ -95,3 +95,53 @@ tempEnrollment(pupil).then(function()
 {
     console.log(`some error occured!!`);
 })
+
+// ------------------------> Fetch API using Promise <------------------- //
+
+function fetchAPI()
+{
+    return new Promise(function(resolve,reject)
+    {
+        
+        const error = false;
+
+        if(!error)
+        {
+            let url = fetch(`https://api.github.com/users`);
+            url.then((x)=>
+            {
+                let users = x.json();
+                resolve(users);
+            }).catch(()=>
+            {
+                console.log("random input");
+            })            
+            
+        }
+        else
+        {
+            reject();
+        }
+        
+    })    
+};
+
+let a = fetchAPI();
+
+a.then((x) => 
+{
+    let list2 = document.getElementById("list2");
+
+    let str = ``;
+    
+    x.forEach(element => 
+        {
+            str += `<li>${element.login + " " + element.id}</li>`
+        })
+
+    list2.innerHTML = str;
+}).catch(()=>
+{
+    console.log("some error occured")
+})
+
